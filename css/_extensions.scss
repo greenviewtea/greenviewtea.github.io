@@ -1,0 +1,94 @@
+@import "variables";
+
+//@extend-elements
+
+%extend_1 {
+    background-color: $color_3;
+    color: $color_4;
+    text-decoration: none;
+}
+
+%extend_2 {
+    padding: 9px 15px;
+    font-weight: bold;
+    color: $color_theme;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 0;
+}
+
+%extend_3 {
+    color: $color_theme;
+    text-decoration: none;
+    border: 0;
+}
+
+%extend_4 {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    //Instead of the line below you could use @include backface-visibility($visibility)
+    backface-visibility: hidden;
+}
+
+%extend_5 {
+    height: 0 !important;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 100%;
+    text-indent: -9999px;
+    width: 100% !important;
+}
+
+%extend_6 {
+    display: block;
+    margin: 0 auto;
+    max-width: 219px;
+}
+
+%extend_7 {
+    background: $color_9;
+    display: block;
+    font-family: $font_2, $font_1;
+    padding: 9px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+%extend_8 {
+    background: transparent;
+    border: 1px solid $color_border;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 0;
+    color: $color_4;
+    padding: 20px;
+    margin-bottom: 20px !important;
+}
+
+%extend_9 {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    background: $color_theme;
+}
+
+%extend_10 {
+    height: 60px;
+    width: 60px;
+    float: left;
+    border-right: 1px solid $color_13;
+    color: $color_4;
+    font-weight: bold;
+}
+
+%extend_11 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+%extend_12 {
+    color: $color_15;
+    font-size: 13px;
+    display: block;
+    line-height: 23px;
+}

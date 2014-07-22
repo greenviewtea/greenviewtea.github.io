@@ -1,20 +1,615 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>FLATO - One Page Theme</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="FLATO, one-page, CSS3, HTML5">
+        <meta name="author" content="Basicoh.com">
+        <link href="/css/style.css" rel="stylesheet" media="screen">
+        <link rel="shortcut icon" href="assets/img/icons/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icons/apple-touch-icon-114x114.png">
+    </head>
+    <body>
+        <header id="top">
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span3 gvti-title">
+                        Green View Tea Industries
+                    </div>
+                    <div class="span9">
+                        <ul class="main-menu">
+                            <li><a href="#" class="current">HOME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#services">SERVICES</a></li>
+                            <li><a href="#work">PORTFOLIO</a></li>
+                            <li><a href="#blog">BLOG</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                        <a href="#" class="resp-menu-btn collapsed" data-toggle="collapse" data-target=".nav-collapse"><i class="icon-align-justify icon-white"></i></a>
+                    </div>
+                </div>
+                <div class="row-fluid resp-menu">
+                    <div class="span12">
+                        <div id="menu-movile" class="nav-collapse collapse">
+                            <ul class="nav">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="#about">ABOUT</a></li>
+                                <li><a href="#services">SERVICES</a></li>
+                                <li><a href="#work">PORTFOLIO</a></li>
+                                <li><a href="#blog">BLOG</a></li>
+                                <li><a href="#contact">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="slider">
+            <div class="container">
+                <div id="mainSlider" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="active item">
+                            <div class="slide1 nBg">
+                                <div class="row-fluid">
+                                    <div class="span12" style="text-align:center">
+                                        <img src="assets/img/slide4.png" alt="image alt text">
+                                    </div>
+                                </div>
+                            </div><!-- /slide1 -->
+                        </div><!-- /item -->
+                        <div class="item">
+                            <div class="slide1 nBg">
+                                <div class="row-fluid">
+                                    <div class="span12" style="text-align:center">
+                                        <img src="assets/img/slide2.png" alt="image alt text">
+                                    </div>
+                                </div>
+                            </div><!-- /slide1 -->
+                        </div><!-- /item -->
+                        <div class="item">
+                            <div class="slide1 nBg">
+                                <div class="row-fluid">
+                                    <div class="span12" style="text-align:center">
+                                        <img src="assets/img/slide1.png" alt="image alt text">
+                                    </div>
+                                </div>
+                            </div><!-- /slide1 -->
+                        </div><!-- /item -->
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#mainSlider" data-slide="prev">‹</a>
+                    <a class="carousel-control right" href="#mainSlider" data-slide="next">›</a>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                        <li data-target="#mainSlider" data-slide-to="1"></li>
+                        <li data-target="#mainSlider" data-slide-to="2"></li>
+                    </ol>
+                </div> <!-- /mainSlider -->
+            </div>
+            <div class="slider-pag-bg"></div>
+        </section>
+        <section id="services" class="intro">
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <h1>This is Flato. An award winning studio located in London.</h1>
+                        <p>BUILT USING TWITTER BOOTSTRAP, THIS THEME IS MODERN & FRESH, IDEAL FOR YOUR AGENCY OR FREELANCE SITE.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span3 service-container">
+                        <div class="service">
+                            <div class="service-front">
+                                <div class="service-1"></div>
+                                <h2>GOOGLE CHROME</h2>
+                            </div>
+                            <div class="service-back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3 service-container">
+                        <div class="service">
+                            <div class="service-front">
+                                <div class="service-2"></div>
+                                <h2>ADOBE FIREWORKS</h2>
+                            </div>
+                            <div class="service-back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3 service-container">
+                        <div class="service">
+                            <div class="service-front">
+                                <div class="service-3"></div>
+                                <h2>SPARROW</h2>
+                            </div>
+                            <div class="service-back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3 service-container" style="border:none;">
+                        <div class="service">
+                            <div class="service-front">
+                                <div class="service-4"></div>
+                                <h2>ACROBAT READER</h2>
+                            </div>
+                            <div class="service-back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-border"></div>
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span3 service-container">
+                        <div class="service">
+                            <div class="service-front">
+                                <div class="service-5"></div>
+                                <h2>ADOBE DREAMWEAVER</h2>
+                            </div>
+                            <div class="service-back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3 service-container">
+                        <div class="service">
+                            <div class="service-front">
+                                <div class="service-6"></div>
+                                <h2>EMAIL</h2>
+                            </div>
+                            <div class="service-back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3 service-container">
+                        <div class="service">
+                            <div class="service-front">
+                                <div class="service-7"></div>
+                                <h2>NOTES</h2>
+                            </div>
+                            <div class="service-back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3 service-container" style="border:none;">
+                        <div class="service">
+                            <div class="service-front">
+                                <div class="service-8"></div>
+                                <h2>SPOTIFY</h2>
+                            </div>
+                            <div class="service-back">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="work">
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <h3 class="subpage-title white"><span>OUR WORK</span></h3>
+                        <!-- PORTFOLIO: Carousel slide -->
+                        <div id="portfolioSlider" class="carousel slide">
+                            <!-- PORTFOLIO: Carousel items -->
+                            <div class="carousel-inner">
+                                <!-- WORK: Carousel slide -->
+                                <div class="active item">
+                                    <div id="workSlider" class="carousel slide">
+                                        <!-- WORK: Carousel items -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <div class="inner wall clearfix">
+                                                    <a href="#workSlider" data-slide-to="1" class="work-link"><img src="assets/img/work1.png" alt="image alt text here"><div class="image-overlay"></div></a>
+                                                    <a href="#workSlider" data-slide-to="2" class="work-link"><img src="assets/img/work2.png" alt="image alt text here"><div class="image-overlay"></div></a>
+                                                    <a href="#workSlider" data-slide-to="3" class="work-link"><img src="assets/img/work3.png" alt="image alt text here"><div class="image-overlay"></div></a>
+                                                    <a href="#workSlider" data-slide-to="4" class="work-link"><img src="assets/img/work4.png" alt="image alt text here"><div class="image-overlay"></div></a>
+                                                    <a href="#workSlider" data-slide-to="5" class="work-link"><img src="assets/img/work5.png" alt="image alt text here"><div class="image-overlay"></div></a>
+                                                    <a href="#workSlider" data-slide-to="6" class="work-link"><img src="assets/img/work6.png" alt="image alt text here"><div class="image-overlay"></div></a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="inner">
+                                                    <div class="work-element">
+                                                        <div class="workDetailSlider slide element-top">
+                                                            <ul class="carousel-inner">
+                                                                <li class="item item1" style="display: list-item;"><img src="assets/img/single-work-big1.jpg" alt="image alt text here"></li>
+                                                            </ul>
+                                                            <div class="element-details">
+                                                                <h2>PROJECT NUMBER 1</h2>
+                                                                <span class="element-date">NOV 20 2013</span><!-- /element-date -->
+                                                                <span class="element-meta">Web Design, Wordpress</span><!--/element-meta -->
+                                                                <p class="element-describe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="element-bottom">
+                                                            <div class="contNav" style="text-align:center;">
+                                                                <a class="view-all" href="#workSlider" data-slide-to="0">VIEW ALL</a>																	</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="inner">
+                                                    <div class="work-element">
+                                                        <div class="workDetailSlider slide element-top">
+                                                            <ul class="carousel-inner">
+                                                                <li class="item item1" style="display: list-item;"><img src="assets/img/single-work-big2.jpg" alt="image alt text here"></li>
+                                                            </ul>
+                                                            <div class="element-details">
+                                                                <h2>PROJECT NUMBER 2</h2>
+                                                                <span class="element-date">NOV 20 2013</span>
+                                                                <span class="element-meta">Web Design, Wordpress</span>
+                                                                <p class="element-describe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="element-bottom">
+                                                            <div class="contNav" style="text-align:center;">
+                                                                <a class="view-all" href="#workSlider" data-slide-to="0">VIEW ALL</a>																	</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /item -->
+                                            <div class="item">
+                                                <div class="inner">
+                                                    <div class="work-element">
+                                                        <div class="workDetailSlider slide element-top">
+                                                            <ul class="carousel-inner">
+                                                                <li class="item item1" style="display: list-item;"><img src="assets/img/single-work-big3.jpg" alt="image alt text here"></li>
+                                                            </ul>
+                                                            <div class="element-details">
+                                                                <h2>PROJECT NUMBER 3</h2>
+                                                                <span class="element-date">NOV 20 2013</span><!-- /element-date -->
+                                                                <span class="element-meta">Web Design, Wordpress</span><!--/element-meta -->
+                                                                <p class="element-describe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                            </div><!-- /element-details -->
+                                                            <div class="clear"></div>
+                                                        </div><!-- /workDetailSlider -->
+                                                        <div class="element-bottom">
+                                                            <div class="contNav" style="text-align:center;">
+                                                                <a class="view-all" href="#workSlider" data-slide-to="0">VIEW ALL</a>																	</div>
+                                                        </div><!-- /element-bottom -->
+                                                    </div><!-- /work-element -->
+                                                </div>
+                                            </div><!-- /item -->
+                                            <div class="item">
+                                                <div class="inner">
+                                                    <div class="work-element">
+                                                        <div class="workDetailSlider slide element-top">
+                                                            <ul class="carousel-inner">
+                                                                <li class="item item1" style="display: list-item;"><img src="assets/img/single-work-big1.jpg" alt="image alt text here"></li>
+                                                            </ul>
+                                                            <div class="element-details">
+                                                                <h2>PROJECT NUMBER 4</h2>
+                                                                <span class="element-date">NOV 20 2013</span><!-- /element-date -->
+                                                                <span class="element-meta">Web Design, Wordpress</span><!--/element-meta -->
+                                                                <p class="element-describe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                            </div><!-- /element-details -->
+                                                            <div class="clear"></div>
+                                                        </div><!-- /workDetailSlider -->
+                                                        <div class="element-bottom">
+                                                            <div class="contNav" style="text-align:center;">
+                                                                <a class="view-all" href="#workSlider" data-slide-to="0">VIEW ALL</a>																	</div>
+                                                        </div><!-- /element-bottom -->
+                                                    </div><!-- /work-element -->
+                                                </div>
+                                            </div><!-- /item -->
+                                            <div class="item">
+                                                <div class="inner">
+                                                    <div class="work-element">
+                                                        <div class="workDetailSlider slide element-top">
+                                                            <ul class="carousel-inner">
+                                                                <li class="item item1" style="display: list-item;"><img src="assets/img/single-work-big2.jpg" alt="image alt text here"></li>
+                                                            </ul>
+                                                            <div class="element-details">
+                                                                <h2>PROJECT NUMBER 5</h2>
+                                                                <span class="element-date">NOV 20 2013</span><!-- /element-date -->
+                                                                <span class="element-meta">Web Design, Wordpress</span><!--/element-meta -->
+                                                                <p class="element-describe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                            </div><!-- /element-details -->
+                                                            <div class="clear"></div>
+                                                        </div><!-- /workDetailSlider -->
+                                                        <div class="element-bottom">
+                                                            <div class="contNav" style="text-align:center;">
+                                                                <a class="view-all" href="#workSlider" data-slide-to="0">VIEW ALL</a>																	</div>
+                                                        </div><!-- /element-bottom -->
+                                                    </div><!-- /work-element -->
+                                                </div>
+                                            </div><!-- /item -->
+                                            <div class="item">
+                                                <div class="inner">
+                                                    <div class="work-element">
+                                                        <div class="workDetailSlider slide element-top">
+                                                            <ul class="carousel-inner">
+                                                                <li class="item item1" style="display: list-item;"><img src="assets/img/single-work-big3.jpg" alt="image alt text here"></li>
+                                                            </ul>
+                                                            <div class="element-details">
+                                                                <h2>PROJECT NUMBER 6</h2>
+                                                                <span class="element-date">NOV 20 2013</span><!-- /element-date -->
+                                                                <span class="element-meta">Web Design, Wordpress</span><!--/element-meta -->
+                                                                <p class="element-describe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                            </div><!-- /element-details -->
+                                                            <div class="clear"></div>
+                                                        </div><!-- /workDetailSlider -->
+                                                        <div class="element-bottom">
+                                                            <div class="contNav" style="text-align:center;">
+                                                                <a class="view-all" href="#workSlider" data-slide-to="0">VIEW ALL</a>																	</div>
+                                                        </div><!-- /element-bottom -->
+                                                    </div><!-- /work-element -->
+                                                </div>
+                                            </div><!-- /item -->
+                                        </div>
+                                        <!-- WORK: Carousel nav -->
+                                    </div> <!-- /workSlider -->
+                                </div>
+                            </div><!-- /carousel-inner -->
+                        </div><!-- /portfolioSlider -->
+                    </div><!-- /span12 -->
+                </div><!-- /row-fluid -->
+            </div><!-- /container -->
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <h3 class="subpage-title white"><span>ABOUT OUR STUDIO</span></h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    </div><!-- /span12 -->
+                </div><!-- /row-fluid -->
+            </div><!-- /container -->
+            <div class="about-arrow"></div>
+        </section>
+        <!-- TEAM SECTION-->
+        <section class="team">
+            <div class="container">
+                <h3 class="subpage-title"><span>The Team</span></h3>
+                <div class="row-fluid">
+                    <div class="span3">
+                        <img src="assets/img/team1.png" alt="image alt text here">
+                        <h4 class="black">BRYCE WALTER</h4>
+                        <p>Art Director</p>
+                        <span class="twitter"><a href="#">@bwalter</a></span>
+                    </div><!-- /span3 -->
+                    <div class="span3">
+                        <img src="assets/img/team2.png" alt="image alt text here">
+                        <h4 class="black">CLARKE HARRIS</h4>
+                        <p>Visual Designer</p>
+                        <span class="twitter"><a href="#">@charris</a></span>
+                    </div><!-- /span3 -->
+                    <div class="span3">
+                        <img src="assets/img/team3.png" alt="image alt text here">
+                        <h4 class="black">GABE LOPEZ</h4>
+                        <p>Creative Director</p>
+                        <span class="twitter"><a href="#">@glopez</a></span>
+                    </div><!-- /span3 -->
+                    <div class="span3">
+                        <img src="assets/img/team4.png" alt="image alt text here">
+                        <h4 class="black">JOHN MISEROY</h4>
+                        <p>Account Director</p>
+                        <span class="twitter"><a href="#">@jmiseroy</a></span>
+                    </div><!-- /span3 -->
+                </div><!-- /row-fluid -->
+            </div><!-- /container -->
+        </section>
+        <!-- STATICS CHARTS SECTION -->
+        <section id="statics">
+            <div class="container">
+                <h3 class="subpage-title"><span>Statics</span></h3>
+                <div class="row-fluid">
+                    <div class="span4">
+                        <a href="#" class="stat1">
+                            <div class="chart easyPieChart" data-percent="80" style="width: 220px; height: 220px; line-height: 220px;"><canvas width="440" height="440" style="width: 220px; height: 220px;"></canvas></div>
+                            <span>80% beer lovers</span>
+                        </a>
+                    </div><!-- /span4 -->
+                    <div class="span4">
+                        <a href="#" class="stat2">
+                            <div class="chart easyPieChart" data-percent="65" style="width: 220px; height: 220px; line-height: 220px;"><canvas width="440" height="440" style="width: 220px; height: 220px;"></canvas></div>
+                            <span>65% football maniacs</span>
+                        </a>
+                    </div><!-- /span4 -->
+                    <div class="span4">
+                        <a href="#" class="stat3">
+                            <div class="chart easyPieChart" data-percent="90" style="width: 220px; height: 220px; line-height: 220px;"><canvas width="440" height="440" style="width: 220px; height: 220px;"></canvas></div>
+                            <span>90% bowling masters</span>
+                        </a>
+                    </div><!-- /span4 -->
+                </div><!-- /row-fluid -->
+                <!-- THIRD SLIDER - INDIVIDUALS WORKS -->
+                <div id="staticsSlider" class="carousel slide">
+                    <ul id="slider-statics" class="carousel-inner slidesJs rslides rslides1">
+                        <li class="item rslides1_on" id="rslides1_s0" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;">
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <h2 class="titleone">WE CREATE BEAUTIFUL
+                                        <br>& WELL CODED DESIGNS</h2>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                    <div class="navSlide">
+                                        <a class="carousel-control left rslides_nav rslides1_nav prev" href="#staticSlider">‹</a>
+                                        <a class="carousel-control right rslides_nav rslides1_nav next" href="#staticSlider">›</a>
+                                    </div><!-- /navSlide -->
+                                </div><!-- /span6 -->
+                                <img src="assets/img/mockup.png" alt="image">
+                            </div><!-- /row-fluid -->
+                        </li>
+                        <li class="item " id="rslides1_s1" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;">
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <h2 class="titleone">OUR MAIN GOAL,
+                                        <br>OUR CLIENT'S HAPPINESS</h2>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                    <div class="navSlide">
+                                        <a class="carousel-control left rslides_nav rslides1_nav prev" href="#staticsSlider">‹</a>
+                                        <a class="carousel-control right rslides_nav rslides1_nav next" href="#staticsSlider">›</a>
+                                    </div><!-- /navSlide -->
+                                </div><!-- /span6 -->
+                                <img src="assets/img/mockup1.png" alt="image">
+                            </div><!-- /row-fluid -->
+                        </li>
+                    </ul>
+                </div> <!-- /staticsSlider -->
+            </div> <!-- /container -->
+        </section>
+        <!-- CLIENTS SECTION -->
+        <section id="clients">
+            <div class="container">
+                <h3 class="subpage-title white"><span>SOME OF OUR CLIENTS</span></h3>
+                <div class="row-fluid">
+                    <div class="span2 offset1"><a href="#"><img src="assets/img/client2.png" alt="image alt text here"></a></div>
+                    <div class="span2"><a href="#"><img src="assets/img/client3.png" alt="image alt text here"></a></div>
+                    <div class="span2"><a href="#"><img src="assets/img/client4.png" alt="image alt text here"></a></div>
+                    <div class="span2"><a href="#"><img src="assets/img/client5.png" alt="image alt text here"></a></div>
+                    <div class="span2"><a href="#"><img src="assets/img/client6.png" alt="image alt text here"></a></div>
+                </div>
+            </div>
+        </section>
+        <!-- BLOG SECTION -->
+        <section id="blog">
+            <div class="container">
+                <h3 class="subpage-title"><span>OUR NEWS</span></h3>
+                <div class="row-fluid">
+                    <div class="span12">
+                        <ul class="blog-posts">
+                            <!-- FIRST BLOG POST -->
+                            <li>
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <div class="post-image">
+                                            <div class="post-meta">
+                                                <span class="post-month">NOV</span>
+                                                <span class="post-year">2013</span>
+                                            </div><!-- /post-meta -->
+                                            <span class="post-date">18</span>
+                                            <img src="assets/img/blog1.png" alt="image alt text here">
+                                        </div><!-- /post-image -->
+                                    </div><!-- /span6 -->
+                                    <div class="span6">
+                                        <div class="blog-post">
+                                            <h2 class="black">BLOG POST TITLE</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus bibendcibus bibendum mauvel tempor metus tempor quis. </p>
+                                            <a href="#post-1" class="small-blk-btn" data-toggle="modal">Read more  +</a>
+                                        </div><!-- /blog-post -->
+                                    </div><!-- /span6 -->
+                                </div><!-- /row-fluid -->
+                                <!-- MODAL -->
+                                <div id="post-1" class="modal hide fade">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <p>18 NOV 2013<!-- , by Author --></p>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3 class="black">MODAL BLOG POST 1</h3>
+                                        <img src="assets/img/big-blog-1.jpg" alt="image alt text here">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus bibendcibus bibendum mauvel tempor metus tempor quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus bibendcibus bibendum mauvel tempor metus tempor quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus bibendcibus bibendum mauvel tempor metus tempor quis.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#"><i class="icon-gplus"></i></a>
+                                        <a href="#"><i class="icon-facebook"></i></a>
+                                        <a href="#"><i class="icon-twitter"></i></a>
+                                    </div><!-- /modal-footer -->
+                                </div><!-- /modal hide fade -->
+                            </li>
+                            <!-- BLOG POST 2 -->
+                            <li>
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <div class="post-image">
+                                            <div class="post-meta">
+                                                <span class="post-month">SEP</span>
+                                                <span class="post-year">2013</span>
+                                            </div><!-- /post-meta -->
+                                            <span class="post-date">10</span>
+                                            <img src="assets/img/blog3.png" alt="image alt text here">
+                                        </div><!-- /post-image -->
+                                    </div><!-- /span6 -->
+                                    <div class="span6">
+                                        <div class="blog-post">
+                                            <h2 class="black">BLOG POST TITLE</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus bibendcibus bibendum mauvel tempor metus tempor quis. </p>
+                                            <a href="#post-3" class="small-blk-btn" data-toggle="modal">Read more  +</a>
+                                        </div><!-- /blog-post -->
+                                    </div><!-- /span6 -->
+                                </div><!-- /row-fluid -->
+                                <!-- MODAL -->
+                                <div id="post-3" class="modal hide fade">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <p>10 SEP 2013<!-- , by Author --></p>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3 class="black">MODAL BLOG POST 2</h3>
+                                        <img src="assets/img/big-blog-1.jpg" alt="blog big image">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus bibendcibus bibendum mauvel tempor metus tempor quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus bibendcibus bibendum mauvel tempor metus tempor quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus bibendcibus bibendum mauvel tempor metus tempor quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus bibendcibus bibendum mauvel tempor metus tempor quis.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#"><i class="icon-gplus"></i></a>
+                                        <a href="#"><i class="icon-facebook"></i></a>
+                                        <a href="#"><i class="icon-twitter"></i></a>
+                                    </div><!-- /modal-footer -->
+                                </div><!-- /modal hide fade -->
+                            </li>
+                        </ul><!-- /blog-posts -->
+                    </div><!-- /span12 -->
+                </div><!-- /row-fluid -->
+            </div><!-- /container -->
+        </section>
+        <!-- End Blog -->
+        <section id="contact">
+            <div class="container">
+                <h3 class="subpage-title white"><span>CONTACT US</span></h3>
+                <div class="row-fluid">
+                    <div class="span12">
+                        <form id="contact-form" action="#" method="post" class="form-horizontal">
+                            <input class="input-xxlarge span12" type="text" placeholder="Enter Your Name" name="name" required="">
+                            <input class="input-xxlarge span12" type="email" placeholder="Enter Your Email" name="email" required="">
+                            <textarea rows="5" class="span12" placeholder="Message" name="message" required=""></textarea>
+                            <button type="submit" class="big-blu-btn" style="float:right; display:block;">SEND</button>
+                            <div class="clear"></div>
+                        </form>
+                        <div class="copyright">
+                            <span class="pull-left">© Copyright 2013</span>
+                            <span class="pull-right">Created by Basicoh</span>
+                            <div class="clear"></div>
+                            <a href="#top" class="totop" id="backtotop"></a><!-- /totop -->
+                        </div><!-- /COPYRIGHT -->
+                    </div><!-- /span12 -->
+                </div><!-- /row-fluid -->
+            </div><!-- /container -->
+        </section>
+        <!-- End Contact -->
+        <section id="map_canvas">
+            <!-- Map -->
+            <section class="map"><iframe width="100%" height="380px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=37.735377,86.572266&amp;t=m&amp;z=4&amp;output=embed"></iframe></section>
+            <!-- end Map -->
+        </section>
+        <!-- JAVASCRIPT LIST -->
+        <script type="text/javascript" src="assets/js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.easy-pie-chart.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-func.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+        <script type="text/javascript" src="assets/js/responsiveslides.js"></script>
+        <script type="text/javascript" src="assets/js/easing.js"></script>
+        <script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+    </body>
+</html>

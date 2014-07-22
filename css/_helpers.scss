@@ -1,0 +1,106 @@
+//@extend-elements
+//original selectors
+//.limpia,  .clearThis
+%extend_1 {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+
+
+.limpia {
+    @extend %extend_1;
+}
+.clearThis {
+    @extend %extend_1;
+}
+.box {
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box!important;
+}
+.nm {
+    margin: 0 !important;
+}
+.nmRig {
+    margin-right: 0 !important;
+}
+.nmLef {
+    margin-left: 0 !important;
+}
+.nmTop {
+    margin-top: 0 !important;
+}
+.nmBot {
+    margin-bottom: 0 !important;
+}
+.nb {
+    border: none !important;
+}
+.nbRig {
+    border-right: none !important;
+}
+.nbLef {
+    border-left: none !important;
+}
+.nbTop {
+    border-top: none !important;
+}
+.nbBot {
+    border-bottom: none !important;
+}
+.np {
+    padding: 0 !important;
+}
+.npRig {
+    padding-right: 0 !important;
+}
+.npLef {
+    padding-left: 0 !important;
+}
+.npTop {
+    padding-top: 0 !important;
+}
+.npBot {
+    padding-bottom: 0 !important;
+}
+.nBg {
+    background: none !important;
+}
+.flRig {
+    float: right !important;
+}
+.flLef {
+    float: left !important;
+}
+.flN {
+    float: none !important;
+}
+.fsI {
+    font-style: italic;
+}
+.fsU {
+    text-decoration: underline;
+}
+.fsB {
+    font-weight: bold;
+}
+.no {
+    display: none !important;
+}
+hr {
+    display: none !important;
+}
+.of {
+    display: block;
+    position: absolute;
+    left: -9999px;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}

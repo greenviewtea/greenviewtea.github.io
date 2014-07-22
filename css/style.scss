@@ -1,1 +1,1310 @@
-@import "main"
+@import "bootstrap";
+@import "variables";
+@import "extensions";
+@import "animate";
+@import "helpers";
+@import "responsiveslides";
+@import "easypiechart";
+
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300);
+i[class^="icon-"] {
+    height: auto;
+    line-height: inherit;
+    margin: 0 !important;
+    padding: 0;
+    vertical-align: bottom;
+    width: auto;
+    background: none;
+}
+body {
+    font-family: $font_0, $font_1;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $color_0;
+}
+a {
+    outline: 0!important;
+    color: $color_theme;
+    border: 0;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: 0.3s all ease;
+    &:hover {
+        color: $color_3;
+        text-decoration: none;
+        border: 0;
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: 0.3s all ease;
+    }
+    &.resp-menu-btn {
+        padding: 7px 10px 5px;
+        background: $color_7;
+        cursor: pointer;
+        float: right;
+        margin-top: 17px;
+        &:hover {
+            background: $color_theme;
+        }
+    }
+    &.stat1 {
+        @extend %extend_6;
+        div {
+            background: url(../img/stat1.png) no-repeat center center;
+            @extend %extend_5;
+        }
+        span {
+            @extend %extend_7;
+        }
+        &:hover div {
+        }
+    }
+    &.stat2 {
+        @extend %extend_6;
+        div {
+            background: url(../img/stat2.png) no-repeat center center;
+            @extend %extend_5;
+        }
+        span {
+            @extend %extend_7;
+        }
+        &:hover div {
+        }
+    }
+    &.stat3 {
+        @extend %extend_6;
+        div {
+            background: url(../img/stat3.png) no-repeat center center;
+            @extend %extend_5;
+        }
+        span {
+            @extend %extend_7;
+        }
+        &:hover div {
+        }
+    }
+    &.work-link .image-overlay:hover {
+        background: $color_theme url(../img/work-link.png) center no-repeat;
+    }
+}
+h1 {
+    font-family: $font_2, $font_1;
+}
+h2 {
+    font-family: $font_2, $font_1;
+}
+h3 {
+    font-family: $font_2, $font_1;
+    &.subpage-title {
+        font-family: $font_0, $font_1;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 30px;
+        color: $color_theme;
+        span {
+            display: inline-block;
+            border-bottom: 2px solid $color_theme;
+        }
+    }
+}
+h4 {
+    font-family: $font_2, $font_1;
+}
+h5 {
+    font-family: $font_2, $font_1;
+}
+.delay1 {
+    animation-delay: 1s;
+}
+.delay2 {
+    animation-delay: 2s;
+}
+.delay5 {
+    animation-delay: 0.5s;
+}
+.clear {
+    clear: both;
+}
+.black {
+    color: $color_1;
+}
+.grey {
+    color: $color_0;
+}
+section {
+    padding: 60px 0 70px;
+    overflow: hidden;
+    &.team {
+        text-align: center;
+        h4 {
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        span a {
+            font-size: 12px;
+            border-top: 1px solid $color_10;
+            border-bottom: 1px solid $color_10;
+            display: block;
+            color: $color_11;
+            &:hover {
+                color: $color_theme;
+            }
+        }
+    }
+    &#map_canvas {
+        height: 400px;
+        margin: 0 !important;
+        padding: 0!important;
+    }
+    &.map {
+        padding: 0;
+        margin-bottom: 0;
+        line-height: 0;
+    }
+    &#about p {
+        text-align: center;
+    }
+}
+#workSlider {
+    .contNav {
+        height: 33px;
+        margin: 10px auto 0;
+        max-width: 1170px;
+        position: relative;
+        top: 0;
+        a {
+            margin-top: 0;
+            top: 0;
+        }
+    }
+    .work-element {
+        .element-thumbs {
+            height: auto;
+            overflow: hidden;
+        }
+        a.view-all {
+            margin: 0 auto;
+        }
+    }
+    .carousel-control {
+        position: absolute;
+        top: 104%;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        margin-top: -20px;
+        font-size: 25px;
+        font-weight: 100;
+        line-height: 25px;
+        color: $color_theme;
+        text-align: center;
+        background: transparent;
+        border: 1px solid $color_theme;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 0;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        &:hover {
+            color: $color_4;
+            background: $color_theme;
+        }
+        &.right {
+            left: auto !important;
+            right: 0;
+        }
+    }
+    .carousel-indicators li {
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: 0.3s all ease;
+        display: block;
+        float: left;
+        width: 70px;
+        height: 5px;
+        margin-left: 15px;
+        text-indent: -999px;
+        background-color: $color_14;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 0;
+        cursor: pointer;
+        &:hover {
+            //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: 0.3s all ease;
+            background-color: $color_theme;
+        }
+        &.active {
+            background-color: $color_theme;
+        }
+    }
+    .wall a {
+        float: left;
+        position: relative;
+        width: 33.3%;
+    }
+    div.work-element {
+        height: auto;
+        overflow: hidden;
+    }
+}
+.image-overlay {
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: 0.3s all ease;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0.9;
+    &:hover {
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: 0.3s all ease;
+    }
+}
+.close {
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: 0.3s all ease;
+    float: right;
+    font-size: 30px;
+    height: 58px;
+    width: 60px;
+    border-left: 1px solid $color_13 !important;
+    font-weight: bold;
+    line-height: 20px;
+    color: $color_4;
+    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: none;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    &:hover {
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: 0.3s all ease;
+        color: $color_theme;
+    }
+}
+.big-blu-btn {
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: 0.3s all ease;
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 24px 56px;
+    border: 1px solid $color_border;
+    background: transparent;
+    &:hover {
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: 0.3s all ease;
+        color: $color_4;
+        border: 1px solid $color_4;
+    }
+    &:focus {
+        color: $color_4;
+        border: 1px solid $color_4;
+    }
+}
+.small-blk-btn {
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: 0.3s all ease;
+    font-size: 13px;
+    color: $color_4;
+    background: $color_theme;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 5px 0;
+    &:hover {
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: 0.3s all ease;
+        @extend %extend_1;
+    }
+    &:focus {
+        @extend %extend_1;
+    }
+}
+#staticsSlider {
+    height: auto;
+    margin-top: 95px;
+    .carousel-control {
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: 0.3s all ease;
+        position: static;
+        float: left;
+        width: 66px;
+        height: 66px;
+        font-size: 32px;
+        font-weight: 100;
+        line-height: 60px;
+        color: $color_10;
+        text-align: center;
+        background: transparent;
+        border: 1px solid $color_10;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 0;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        &:hover {
+            //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: 0.3s all ease;
+            color: $color_theme;
+        }
+        &.right {
+            border-left: none;
+            float: left;
+            right: auto !important;
+            top: 0 !important;
+        }
+    }
+    h2 {
+        text-transform: uppercase;
+        &.titleone {
+            line-height: 36px;
+            padding-top: 106px;
+            color: $color_theme;
+            font-weight: 400;
+            font-size: 33px;
+        }
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+    .navSlide {
+        width: 135px;
+    }
+    > .rslides_nav {
+        display: none;
+    }
+    .row-fluid > img {
+        margin-top: -19em;
+        position: relative;
+        z-index: -1;
+    }
+}
+#clients {
+    background: url("../img/client-bg.jpg") center center;
+    padding: 8% 0 12%;
+    img {
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: 0.3s all ease;
+        display: table;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        &:hover {
+            //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: 0.3s all ease;
+            top: -5px;
+        }
+    }
+    .subpage-title {
+        color: $color_9;
+        span {
+            border-bottom-color: $color_9;
+        }
+    }
+}
+header {
+    background: $color_6;
+    font-size: 14px;
+    nav.idiomas ol li {
+        margin: 0;
+        padding: 0;
+        display: block;
+        border-left: 1px solid $color_17;
+        &.primero {
+            border-left: none;
+        }
+    }
+}
+ul {
+    &.main-menu {
+        float: right;
+        margin-bottom: 0;
+        li {
+            list-style: none;
+            float: left;
+            a {
+                display: block;
+                padding: 23px 25px;
+                color: $color_4;
+                font-weight: 700;
+                font-size: 13px;
+                &:hover {
+                    @extend %extend_3;
+                }
+                &:focus {
+                    @extend %extend_3;
+                }
+            }
+            &:last-child a {
+                padding-right: 0;
+            }
+        }
+        a.current {
+            background: $color_theme;
+            color: $color_4 !important;
+        }
+    }
+    &.work-elements {
+        margin-left: 0 !important;
+        ul {
+            margin-left: 0 !important;
+        }
+        li {
+            list-style: none;
+        }
+    }
+    &.element-images {
+        float: left;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    &.social li {
+        float: left;
+        list-style: none;
+        margin-left: 3px;
+        opacity: 1;
+        position: relative;
+        a {
+            padding: 5px;
+            background: $color_7;
+            font-size: 14px;
+            &:hover {
+                background: $color_theme;
+                color: $color_6;
+            }
+            &:focus {
+                background: $color_theme;
+                color: $color_6;
+            }
+        }
+    }
+    &.blog-posts li {
+        list-style: none;
+        border-bottom: 1px solid $color_10;
+        padding-bottom: 60px;
+        margin-bottom: 60px;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+.top-border {
+    border-bottom: 1px solid $color_border;
+}
+.nav-collapse {
+    .nav > li > a {
+        @extend %extend_2;
+        &:hover {
+            background: $color_7;
+            color: $color_4;
+        }
+    }
+    .dropdown-menu a {
+        @extend %extend_2;
+        &:hover {
+            background: $color_7;
+            color: $color_4;
+        }
+    }
+}
+#slider {
+    background: $color_theme;
+    border-top: 1px solid $color_border;
+    color: $color_4 !important;
+    margin: 0;
+    padding: 0;
+    p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+#mainSlider {
+    margin: 0;
+    padding: 32px 100px;
+    .carousel {
+        position: relative;
+        margin-bottom: 0;
+        line-height: inherit;
+        .right {
+            float: none !important;
+        }
+        .left {
+            float: none !important;
+        }
+    }
+    .slide {
+        .right {
+            float: none !important;
+        }
+        .left {
+            float: none !important;
+        }
+    }
+    .right {
+        float: none !important;
+    }
+    .left {
+        float: none !important;
+    }
+    .carousel-control {
+        position: absolute;
+        top: 45%;
+        width: 47px;
+        height: 47px;
+        margin-top: -20px;
+        background: url('../img/slider-nav.png');
+        border: 1px solid $color_4;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 0;
+        z-index: 999;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        text-indent: -99999px;
+        &:hover {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+        &.right {
+            background-position: right;
+            right: 0 !important;
+        }
+    }
+    .item {
+        img {
+            border: 0 none;
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+        h2 {
+            line-height: 36px;
+            font-weight: normal;
+            font-size: 33px;
+            padding-top: 35px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+        p {
+            max-width: 440px;
+            margin-bottom: 50px;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: normal;
+            text-align: left;
+        }
+    }
+    .carousel-indicators {
+        bottom: -31px !important;
+        left: 43.5%;
+        list-style: none outside none;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: auto;
+        z-index: 5;
+        width: 100%;
+        text-align: center;
+        li {
+            display: inline-block;
+            width: 17px;
+            height: 17px;
+            margin: 0 3px;
+            text-indent: -999px;
+            background: url(../img/slider-pag.png);
+            //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+            border-radius: 0;
+            cursor: pointer;
+            float: none;
+        }
+        .active {
+            background-color: transparent;
+            background: url(../img/slider-pag.png);
+            background-position: bottom;
+        }
+    }
+    .slide1 {
+        background: url(../img/slide1.png) no-repeat 332px 25px;
+    }
+    .slide2 {
+        background: url(../img/slide1.png) no-repeat 332px 25px;
+    }
+    .slide3 {
+        background: url(../img/slide1.png) no-repeat 332px 25px;
+    }
+    #mainSlider .right {
+        float: none !important;
+    }
+}
+.slider-pag-bg {
+    background: none repeat scroll 0 0 #2F3239;
+    height: 40px;
+}
+.intro {
+    background: $color_8;
+    padding: 75px 0;
+    margin-bottom: 0;
+    h1 {
+        text-align: center;
+        color: $color_1;
+        font-size: 51px;
+        line-height: 1.2;
+        font-weight: 200;
+        margin: 10px 0;
+    }
+    p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+.services {
+    background: $color_theme;
+    color: $color_4;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+}
+.services-border {
+    border-top: 1px solid $color_border;
+}
+.service {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    //Instead of the line below you could use @include transform-style($style)
+    transform-style: preserve-3d;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: transform 1s;
+    h2 {
+        text-align: center;
+        font-family: $font_2, $font_1;
+        font-size: 18px;
+    }
+    img {
+        display: table;
+        margin: 60px auto 40px auto;
+    }
+}
+.service-1 {
+    display: block;
+    height: 110px;
+    background: url(../img/s1.png) center no-repeat;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.service-2 {
+    display: block;
+    height: 110px;
+    background: url(../img/s2.png) center no-repeat;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.service-3 {
+    display: block;
+    height: 110px;
+    background: url(../img/s3.png) center no-repeat;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.service-4 {
+    display: block;
+    height: 110px;
+    background: url(../img/s4.png) center no-repeat;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.service-5 {
+    display: block;
+    height: 110px;
+    background: url(../img/s5.png) center no-repeat;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.service-6 {
+    display: block;
+    height: 110px;
+    background: url(../img/s6.png) center no-repeat;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.service-7 {
+    display: block;
+    height: 110px;
+    background: url(../img/s7.png) center no-repeat;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.service-8 {
+    display: block;
+    height: 110px;
+    background: url(../img/s8.png) center no-repeat;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.service-container {
+    min-height: 260px !important;
+    position: relative;
+    border-right: 1px solid $color_border;
+    //Instead of the line below you could use @include perspective($p)
+    perspective: 800px;
+}
+.service-front {
+    @extend %extend_4;
+    position: absolute;
+    left: -15px;
+}
+.flipped {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateY(180deg );
+}
+#about {
+    background: $color_theme;
+    color: $color_4;
+    position: relative;
+    .subpage-title {
+        color: $color_9;
+    }
+    span {
+        border-bottom-color: $color_9;
+    }
+}
+.about-arrow {
+    width: 23px;
+    height: 12px;
+    background: url(../img/arrow.png);
+    position: absolute;
+    bottom: -12px;
+    right: 49.4%;
+}
+.post-image {
+    border: 1px solid #C3C3C3;
+    overflow: hidden;
+    position: relative;
+    background-color: $color_12;
+    color: $color_9;
+    img {
+        float: right;
+    }
+    .post-date {
+        background: none repeat scroll 0 0;
+        font-family: $font_2, $font_1;
+        font-size: 97px;
+        height: 100%;
+        left: 0;
+        line-height: 170px;
+        padding: 0 15px 0 46px;
+        position: absolute;
+        z-index: 99;
+    }
+    .post-meta {
+        position: absolute;
+        border-right: 1px solid $color_10;
+        border-bottom: 1px solid $color_10;
+        padding: 8px 8px 0 10px;
+        z-index: 100;
+    }
+    .post-month {
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        line-height: 6px;
+    }
+    .post-year {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+.blog-post {
+    h2 {
+        font-family: $font_0, $font_1;
+        font-size: 18px;
+        line-height: 13px;
+        margin: 0;
+    }
+    p {
+        margin: 10px 0 25px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+#contact {
+    background-color: $color_theme;
+    color: $color_4;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    .subpage-title {
+        color: $color_9;
+    }
+    h3.subpage-title span {
+        border-bottom-color: $color_9;
+    }
+}
+#contact-form {
+    input[type="text"] {
+        height: 4em;
+    }
+    input[type="email"] {
+        height: 4em;
+    }
+}
+.copyright {
+    font-size: 11px;
+    span {
+        position: relative;
+        bottom: -40px;
+    }
+}
+.totop {
+    background: url(../img/top-arrow.png);
+    cursor: pointer;
+    margin: 0 auto;
+    width: 78px;
+    height: 47px;
+    display: block;
+}
+input[type="text"] {
+    @extend %extend_8;
+}
+textarea {
+    @extend %extend_8;
+    padding: 10px 20px;
+}
+input[type="email"] {
+    @extend %extend_8;
+}
+
+.modal-backdrop {
+    @extend %extend_9;
+    &.fade.in {
+        @extend %extend_9;
+    }
+}
+.modal {
+    border: none;
+    top: 3% !important;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 0;
+    outline: none;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: none;
+}
+.modal-body {
+    padding: 0 29px 0 35px;
+    max-height: 700px;
+    p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    h3 {
+        font-family: $font_0, $font_1;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    img {
+        margin-bottom: 20px;
+    }
+}
+.modal-header {
+    background: $color_3;
+    padding: 0;
+    border-bottom: none;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    p {
+        font-size: 18px;
+        font-family: $font_2, $font_1;
+    }
+}
+.modal-footer {
+    background: $color_3;
+    padding: 0;
+    border-top: none;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: none;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: none;
+    height: 60px;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 0;
+    a {
+        float: left;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 18px;
+        color: $color_0;
+        border-right: 1px solid $color_13;
+        &:hover {
+            color: $color_theme;
+        }
+    }
+}
+.prev-post {
+    @extend %extend_10;
+    &:hover {
+        color: $color_theme;
+    }
+}
+.next-post {
+    @extend %extend_10;
+    &:hover {
+        color: $color_theme;
+    }
+}
+#work {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    .inner {
+        margin: 0 auto;
+        max-width: 1170px;
+    }
+}
+div {
+    &.work-element {
+        height: 822px;
+    }
+    &.element-top {
+        background: $color_3;
+        color: $color_4;
+    }
+}
+.workDetailSlider {
+    ul {
+        margin: 0;
+    }
+    .carousel-inner {
+        float: left;
+        width: 70%;
+    }
+    .element-details {
+        padding: 30px 30px 20px 0;
+        float: none;
+        overflow: hidden;
+    }
+}
+.work-element {
+    .carousel-control {
+        position: absolute;
+        top: 104%;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        margin-top: -23px;
+        font-size: 25px;
+        font-weight: 100;
+        line-height: 25px;
+        color: $color_theme;
+        text-align: center;
+        background: transparent;
+        border: 1px solid $color_theme;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 0;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        &:hover {
+            background: $color_theme;
+            color: $color_4;
+        }
+        &.right {
+            left: 97.3% !important;
+        }
+    }
+    .element-thumbs {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        height: 280px;
+        li {
+            width: 33.3%;
+            a {
+                @extend %extend_11;
+                img {
+                    @extend %extend_11;
+                }
+            }
+        }
+    }
+    .carousel-indicators {
+        position: absolute;
+        right: 40%;
+        z-index: 5;
+        margin: 0;
+        margin-top: 20px;
+        list-style: none;
+    }
+    a.view-all {
+        background: $color_theme;
+        clear: both;
+        color: $color_9;
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 17px 0 0 554px;
+        padding: 9px 0 8px;
+        text-align: center;
+        width: 103px;
+    }
+}
+.element-details {
+    h2 {
+        color: $color_theme;
+        font-size: 28px;
+        line-height: 45px;
+        font-weight: 400;
+    }
+    p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+.element-date {
+    @extend %extend_12;
+}
+.element-meta {
+    @extend %extend_12;
+    margin-bottom: 26px;
+}
+.element-active {
+    display: block;
+}
+.element-thumbs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 280px;
+    li img {
+    }
+}
+.nav-bottom {
+    border-top: 1px solid $color_9;
+    clear: left;
+    a {
+        &.view-all {
+            background: $color_theme;
+            clear: both;
+            color: $color_9;
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 17px 0 0 554px;
+            padding: 9px 0 8px;
+            text-align: center;
+            width: 103px;
+        }
+        &.carousel-control {
+            background: $color_9;
+            border: 1px solid $color_theme;
+            //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+            border-radius: 0;
+            color: $color_theme !important;
+            font-size: 36px;
+            width: 33px;
+            height: 33px;
+            top: auto;
+            bottom: 14px;
+            &:hover {
+                background: $color_theme;
+                color: $color_9;
+            }
+            &.left {
+                left: 0 !important;
+            }
+            &.right {
+                background-position: right;
+                right: 0 !important;
+            }
+        }
+    }
+}
+@media(min-width: 1200px) {
+    .resp-menu {
+        display: none;
+    }
+    a.resp-menu-btn {
+        display: none;
+    }
+}
+@media(min-width: 980px) and(max-width: 1199px) {
+    .resp-menu {
+        display: none;
+    }
+    a.resp-menu-btn {
+        display: none;
+    }
+}
+@media handheld, only screen and(max-width: 980px) {
+    ul.main-menu {
+        display: none;
+    }
+    .workDetailSlider .carousel-inner {
+        float: none;
+        width: 100%;
+    }
+    #staticsSlider .row-fluid > img {
+        float: right;
+        margin-top: -15em;
+        position: relative;
+        width: 80%;
+        z-index: -1;
+    }
+}
+@media(max-width: 767px) {
+    ul {
+        &.social {
+            display: inline-block;
+            float: none;
+            margin: 20px auto !important;
+            text-align: center;
+        }
+        &.main-menu {
+            display: none;
+        }
+    }
+    .big-blu-btn {
+        font-size: 16px;
+        margin: -15px 0 18px;
+        padding: 16px 22px;
+    }
+    body {
+        text-align: center;
+        padding: 0 !important;
+    }
+    header {
+        padding: 0 20px;
+    }
+    section {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    #staticsSlider .row-fluid > img {
+        margin-top: 0;
+        width: 100%;
+    }
+    #mainSlider .item h2.titleone {
+        padding-top: 0;
+    }
+    a.resp-menu-btn {
+        margin-top: 0;
+        position: absolute;
+        right: 0;
+        top: -51px;
+    }
+    #top .container [class*="span"] {
+        min-height: 0;
+        position: relative;
+    }
+    .blog-post h2 {
+        margin: 15px 0 0;
+    }
+    #clients [class*="span"] {
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 480px) {
+    .totop {
+        margin: 54px auto 0;
+    }
+    #mainSlider {
+        margin: 0;
+        padding: 24px 35px;
+        .carousel-control {
+            background: url("../img/slider-nav.png") no-repeat scroll -14px 0 transparent;
+            margin-left: -18px;
+            width: 21px;
+            &.right {
+                background-position: -63px center;
+            }
+        }
+        .item h2.titletwo {
+            margin-bottom: 7px;
+        }
+    }
+    body {
+        padding: 0 !important;
+    }
+    header {
+        padding: 0 20px;
+    }
+    #slider p {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .intro h1 {
+        font-size: 31px;
+    }
+    ul.main-menu {
+        display: none;
+    }
+    a.resp-menu-btn {
+        position: relative;
+        top: -61px;
+    }
+}
+@media handheld, only screen and(max-width: 320px) {
+    #mainSlider {
+        margin: 0;
+        padding: 11px 24px;
+    }
+}
+.element-bottom li {
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: 0.3s all ease;
+    float: left;
+    cursor: pointer;
+    &:hover {
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: 0.3s all ease;
+        float: left;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+.service-back p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    padding: 19px;
+    border: 1px solid $color_border;
+    background: url(../img/but-bg.png);
+    margin-right: 30px;
+    margin-top: 15px;
+}
+.easyPieChart canvas {
+    width: 100% !important;
+}
+#statics p {
+    line-height: 24px;
+}
+#portfolioSlider .carousel-inner {
+    padding-bottom: 27px;
+    .carousel-inner {
+        padding-bottom: 0;
+    }
+}
+.map {
+    height: 443px;
+    margin-bottom: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+.gvti-title {
+    font-size: 40px;
+    color: $color_theme;
+    font-family: Dosis, sans-serif;
+}
