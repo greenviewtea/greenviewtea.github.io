@@ -1,4 +1,5 @@
-window.smoothScrollTo = (target_id, duration=1000) ->
+window.smoothScrollTo = (target_id, duration=500) ->
+  event.preventDefault()
   step = ->
     factor = (Date.now() - start) / duration # get interpolation factor
     if factor >= 1
@@ -11,5 +12,5 @@ window.smoothScrollTo = (target_id, duration=1000) ->
   delta = target - window.pageYOffset
   start = Date.now()
   factor = 0
-  clearInterval timer  if timer
-  timer = setInterval(step, 10)
+  clearInterval timer if timer
+  timer = setInterval step, 10
