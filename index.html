@@ -101,7 +101,6 @@
                     <div class="col-md-12">
                        <p>Green View Tea Industries mainly produces CTC grade teas. CTC stands for Crush, Tear, and Curl. CTC is a method of processing black tea, similar to that of orthodox tea manufacture. Instead of the leaves being rolled as a final stage, they are passed through a series of cylindrical rollers that crush, tear, and curl the tea. Following grades are being manufactured at our facility.
                        <!-- Table comes here -->
-
                         <BR> <BR>
                         Hover on the below steps to understand the end to end manufacturing process</p>
                     </div>
@@ -111,99 +110,16 @@
         <section class="process">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 service-container">
-                        <div class="service">
-                            <div class="service-front">
-                                <div class="service-1"></div>
-                                <h2>Plucking</h2>
+                    {% for process in site.data.process %}
+                    <div class="col-md-3 flip">
+                            <div class="flip-front">
+                                <h2 class="flip-title">{{ process.title }}</h2>
                             </div>
-                            <div class="service-back">
-                                <p>Tea leaves and flushes, which includes a terminal bud and two young leaves, are plucked from Camellia sinensis bushes. Plucking is usually done by hand when a higher quality tea is needed</p>
+                            <div class="flip-back">
+                                <p>{{ process.description }}</p>
                             </div>
-                        </div>
                     </div>
-                    <div class="col-md-3 service-container">
-                        <div class="service">
-                            <div class="service-front">
-                                <div class="service-2"></div>
-                                <h2>Withering/Wilting</h2>
-                            </div>
-                            <div class="service-back">
-                                <p>Withering is used to remove excess water from the leaves and allows a very slight amount of oxidation. The leaves sometimes lose more than a quarter of their weight in water during withering</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 service-container">
-                        <div class="service">
-                            <div class="service-front">
-                                <div class="service-3"></div>
-                                <h2>Disruption</h2>
-                            </div>
-                            <div class="service-back">
-                                <p>The teas are bruised or torn in order to promote and quicken oxidation. leaf disruption can be done by kneading, rolling, tearing, and crushing, usually by machinery. This also releases some of the leaf juices, which may aid in oxidation and change the taste profile of the tea</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 service-container" style="border:none;">
-                        <div class="service">
-                            <div class="service-front">
-                                <div class="service-4"></div>
-                                <h2>Rolling/Shaping</h2>
-                            </div>
-                            <div class="service-back">
-                                <p>rolling machine which causes the tea to wrap around itself. This rolling action also causes some of the sap, essential oils, and juices inside the leaves to ooze out, which further enhances the taste of the tea</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="services-border"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 service-container">
-                        <div class="service">
-                            <div class="service-front">
-                                <div class="service-5"></div>
-                                <h2>Aeration/Oxidation</h2>
-                            </div>
-                            <div class="service-back">
-                                <p>For teas that require oxidation, the leaves are left on their own in a climate-controlled room or using machines where they turn progressively darker. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 service-container">
-                        <div class="service">
-                            <div class="service-front">
-                                <div class="service-6"></div>
-                                <h2>Drying</h2>
-                            </div>
-                            <div class="service-back">
-                                <p>Drying is done to "finish" the tea for sale. Baking is usually the most common. The drying of the produced tea is responsible for many new flavour compounds and to arrest further odixation process</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 service-container">
-                        <div class="service">
-                            <div class="service-front">
-                                <div class="service-7"></div>
-                                <h2>Sorting</h2>
-                            </div>
-                            <div class="service-back">
-                                <p>Sorting is a mechanical process. One of the objectives of sorting is to classify tea according  to the size of the tea particles.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 service-container" style="border:none;">
-                        <div class="service">
-                            <div class="service-front">
-                                <div class="service-8"></div>
-                                <h2>Packaging</h2>
-                            </div>
-                            <div class="service-back">
-                                <p>Packaging the tea</p>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>
