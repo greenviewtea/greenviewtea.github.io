@@ -10,3 +10,18 @@ github_username:  dhilipsiva
 # Build settings
 markdown: kramdown
 permalink: pretty
+assets:
+  compress:
+    css: sass
+    js: uglifier
+
+
+exclude:
+  - "Rakefile"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "LICENSE"
+  - "config.rb"
+  - "README.md"
+  - "publish.sh"
+  - "serve.sh"
