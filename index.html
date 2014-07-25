@@ -38,11 +38,11 @@
             <div class="container">
                 <div id="mainSlider" class="carousel slide">
                     <div class="image-slider-wrapper">
-				        <ul id="image_slider">
-					        <li id="slider-image-1"></li>
-					        <li id="slider-image-2"></li>
-					        <li id="slider-image-3"></li>
-				        </ul>
+                        <ul id="image_slider">
+                            <li id="slider-image-1"></li>
+                            <li id="slider-image-2"></li>
+                            <li id="slider-image-3"></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                     <div class="col-md-12">
                         <h3 class="subpage-title white"><span>ABOUT US</span></h3>
                         <p>With decades of experience and expertise in tea manufacturing domain, Green View Tea Industries has been consistently producing and delivering finest & high quality of teas to invigorate discerning tea lovers around the world. Green View Tea Industries is known for its world class, state of the art manufacturing unit.
-                       </p>
+                        </p>
                     </div><!-- /span12 -->
                 </div><!-- /row-->
             </div><!-- /container -->
@@ -63,10 +63,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                       <p>Green View Tea Industries mainly produces CTC grade teas. CTC stands for Crush, Tear, and Curl. CTC is a method of processing black tea, similar to that of orthodox tea manufacture. Instead of the leaves being rolled as a final stage, they are passed through a series of cylindrical rollers that crush, tear, and curl the tea. Following grades are being manufactured at our facility.
-                       <!-- Table comes here -->
-                        <BR> <BR>
-                        Hover on the below steps to understand the end to end manufacturing process</p>
+                        <p>Green View Tea Industries mainly produces CTC grade teas. CTC stands for Crush, Tear, and Curl. CTC is a method of processing black tea, similar to that of orthodox tea manufacture. Instead of the leaves being rolled as a final stage, they are passed through a series of cylindrical rollers that crush, tear, and curl the tea. Following grades are being manufactured at our facility.
+                            <!-- Table comes here -->
+                            <BR> <BR>
+                            Hover on the below steps to understand the end to end manufacturing process</p>
                     </div>
                 </div>
             </div>
@@ -76,12 +76,12 @@
                 <div class="row">
                     {% for process in site.data.process %}
                     <div class="col-md-3 flip">
-                            <div class="flip-front">
-                                <h2 class="flip-title">{{ process.title }}</h2>
-                            </div>
-                            <div class="flip-back">
-                                <p>{{ process.description }}</p>
-                            </div>
+                        <div class="flip-front">
+                            <h2 class="flip-title">{{ process.title }}</h2>
+                        </div>
+                        <div class="flip-back">
+                            <p>{{ process.description }}</p>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
