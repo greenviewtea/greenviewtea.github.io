@@ -10,11 +10,11 @@ github_username:  dhilipsiva
 # Build settings
 markdown: kramdown
 permalink: pretty
+
 assets:
   compress:
     css: sass
     js: uglifier
-
 
 exclude:
   - "Rakefile"
