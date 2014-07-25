@@ -1,2 +1,2 @@
 #= require smoothScrollTo
-#= require slider
+# require slider
