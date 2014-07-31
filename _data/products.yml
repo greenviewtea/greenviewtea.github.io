@@ -1,0 +1,28 @@
+- type: "Broken"
+  grades:
+    - grade: "BP"
+      nomenclature: "Broken Pekoe"
+
+    - grade: "BOP"
+      nomenclature: "Broken Orange Pekoe"
+
+    - grade: "BPS"
+      nomenclature: "Broken Pekoe Souchong"
+
+
+- type: "Fannings"
+  grades:
+    - grade: "BOPF"
+      nomenclature: "Broken Orange Pekoe Fannings"
+
+
+- type: "Dust"
+  grades:
+    - grade: "PD"
+      nomenclature: "Pekoe Dust"
+
+    - grade: "RD"
+      nomenclature: "Red Dust"
+
+    - grade: "FD"
+      nomenclature: "Fine Dust"
