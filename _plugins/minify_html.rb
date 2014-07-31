@@ -1,3 +1,4 @@
+require 'jekyll'
 require 'html_press'
 
 module Jekyll
