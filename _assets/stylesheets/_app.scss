@@ -244,6 +244,10 @@ section {
 header {
     background: $color_6;
     font-size: 14px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: $header_height;
     nav.idiomas ol li {
         margin: 0;
         padding: 0;
@@ -920,4 +924,8 @@ div {
 
 .white-text {
     color: white;
+}
+
+#slider {
+    padding-top: $header_height;
 }
