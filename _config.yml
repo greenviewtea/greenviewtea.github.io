@@ -25,3 +25,6 @@ exclude:
   - "README.md"
   - "publish.sh"
   - "serve.sh"
+  - "uncss.js"
+  - "package.json"
+  - "node_modules"
