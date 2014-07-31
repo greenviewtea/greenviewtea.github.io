@@ -1,4 +1,7 @@
 window.smoothScrollTo = (target_id, duration=500) ->
+  for elem in document.querySelectorAll ".current"
+    elem.className = ""
+  event.toElement.className = "current"
   event.preventDefault()
   step = ->
     factor = (Date.now() - start) / duration # get interpolation factor
