@@ -8,3 +8,4 @@ gem "coffee-script"
 gem "uglifier"
 gem "jekyll", "~> 2.1.1"
 gem 'jekyll-assets', '~> 0.9.0'
+gem "html_press"
